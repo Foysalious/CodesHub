@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '5a6d554418ba8b254dc3229a0445e710e689934a',
+    'reference' => '5a389352f4f7847ddd5ee0a96607788f5b553f5c',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -32,6 +32,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '8d8f88b3b3830916be94292c1fbce84433efb1aa',
+    ),
+    'brian2694/laravel-toastr' => 
+    array (
+      'pretty_version' => '5.54',
+      'version' => '5.54.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e543a8a6953be6b25706da4c7ae48600666a70dc',
     ),
     'brick/math' => 
     array (
@@ -458,7 +467,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '5a6d554418ba8b254dc3229a0445e710e689934a',
+      'reference' => '5a389352f4f7847ddd5ee0a96607788f5b553f5c',
     ),
     'laravel/sail' => 
     array (
@@ -782,8 +791,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '1.0.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psr/simple-cache' => 
@@ -1265,6 +1274,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'b43b05cf43c1b6d849478965062b6ef73e223bb5',
+    ),
+    'uxweb/sweet-alert' => 
+    array (
+      'pretty_version' => '2.0.5',
+      'version' => '2.0.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e9eb83d7d991de0fcb74398a698e0cdfef6d189d',
     ),
     'vlucas/phpdotenv' => 
     array (

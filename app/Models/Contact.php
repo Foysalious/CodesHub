@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
     use HasFactory;
+
+    /**
+     * @var mixed
+     */
+    protected $casts = [
+        'service_area' => 'array'
+    ];
 }

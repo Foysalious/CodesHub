@@ -21,3 +21,4 @@ Auth::routes();
 
 Route::get('/', [FrontendController::class, 'index'])->name('homePage');
 Route::get('/contact-us', [FrontendController::class, 'contact'])->name('contactPage');
+Route::post('/contact-us', [FrontendController::class, 'store'])->name('storeContact');
