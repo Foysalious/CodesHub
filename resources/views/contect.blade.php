@@ -541,6 +541,7 @@
 <!-- font awsome js -->
 <script src="assets/js/ckeditor4/ckeditor.js"></script>
 
+<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
 
 
 <script>
