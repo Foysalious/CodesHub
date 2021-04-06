@@ -39,15 +39,14 @@
                         </li>
                         <!-- nav single view end -->
 
-                        
-                        
+
                         <!-- nav single view end -->
 
                         <!-- nav single view start -->
                         <li>
-                            <a href="">
+                            <a href="{{route('contact')}}">
                                 <div class="left">
-                                    logo
+                                    Contact Us
                                 </div>
                                 <div class="right">
                                     <i class="fas fa-bars"></i>
@@ -55,32 +54,6 @@
                             </a>
                         </li>
                         <!-- nav single view end -->
-
-
-                        <!-- nav drop down view start -->
-                        <li>
-                            <div class="row navbar-dropdown-top" id="3">
-                                <div class="col-md-10  col-10">
-                                    <a>selling history </a>
-                                </div>
-                                <div class="col-md-2 col-2 text-right">
-                                    <i class="fas fa-angle-down"></i>
-                                </div>
-                            </div>
-                            <div class="row navbar-dropdown-child 3">
-                                <div class="col-md-12">
-                                    <ul>
-                                        <li>
-                                            <a href="">
-                                                <i class="fas fa-truck-loading" style="margin-right: 5px"></i>
-                                                Total Sell
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li> 
-                        <!-- nav drop down view end -->
 
 
                     </ul>

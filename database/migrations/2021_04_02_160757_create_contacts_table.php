@@ -16,18 +16,18 @@ class CreateContactsTable extends Migration
         Schema::create('contacts', function (Blueprint $table) {
 
             $table->increments('id');
-            $table->json('service_area');
-            $table->longText('requirements');
-            $table->string('name');
+            $table->json('service_area')->nullable();
+            $table->longText('requirements')->nullable();
+            $table->string('name')->nullable();
             $table->string('email');
-            $table->string('country_code');
+            $table->string('country_code')->nullable();
             $table->string('number');
-            $table->string('company_name');
-            $table->string('company_type');
-            $table->string('website');
-            $table->string('address');
-            $table->string('social_type');
-            $table->string('network_id');
+            $table->string('company_name')->nullable();
+            $table->string('company_type')->nullable();
+            $table->string('website')->nullable();
+            $table->string('address')->nullable();
+            $table->string('social_type')->nullable();
+            $table->string('network_id')->nullable();
             $table->timestamps();
         });
     }

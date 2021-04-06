@@ -4,7 +4,7 @@
 <!-- main content start -->
 <div class="main-content">
     <div class="container-fluid">
-        
+
         <!-- page indicator start -->
         <section class="page-indicator">
             <div class="row">
@@ -21,7 +21,7 @@
             </div>
         </section>
         <!-- page indicator end -->
-    
+
         <!--
             Role 0 = user
             Role 1 = admin
@@ -33,20 +33,23 @@
         <section class="statistics">
             <div class="row" style="margin-bottom: 15px;">
                 <div class="col-md-12">
-                    <h2>You have new messages</h2>
+                    <h2>Total Message</h2>
                 </div>
             </div>
             <div class="row">
-                
+
                 <!--- stat card start -->
                 <div class="col-md-3">
-                    <a href="#">
+                    <a href="{{route('contact')}}">
                         <div class="stat-card">
                             <i class="fas fa-history"></i>
-                            <h3>Total Menu</h3>
-                            <p>15</p>
+                            <h3>Total Message</h3>
+
+
+                            <p>{{ count(App\Models\Contact::orderBy('id','desc')->get()) }}</p>
+
                         </div>
-                    </a>                
+                    </a>
                 </div>
                 <!--- stat card end -->
                 <!--- stat card start -->

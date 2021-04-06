@@ -16,9 +16,13 @@ use App\Http\Controllers\FrontendController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Auth::routes();
-
 Route::get('/', [FrontendController::class, 'index'])->name('homePage');
 Route::get('/contact-us', [FrontendController::class, 'contact'])->name('contactPage');
 Route::post('/contact-us', [FrontendController::class, 'store'])->name('storeContact');
+
+Auth::routes();
+Route::group(['prefix'=>'dashboard', 'middleware'=>['auth']], function(){
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/contact', [App\Http\Controllers\BackendController::class, 'contact'])->name('contact');
+
+});

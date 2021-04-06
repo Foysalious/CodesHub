@@ -5,10 +5,10 @@
             <!-- logo start -->
             <div class="col-md-3 col-3">
                 <div class="logo">
-                   
-                    <img src="{{ asset('frontend/images/logo.png') }}" width="50px" class="img-fluid" alt=""> 
-                                
-                </div>            
+
+                    <img src="{{ asset('frontend/images/logo.png') }}" width="50px" class="img-fluid" alt="">
+
+                </div>
             </div>
             <!-- logo end -->
 
@@ -27,9 +27,9 @@
                             <i class="fas fa-user"></i>
                             <div class="profile-dropdown">
                                 <ul>
-                                    <li>
-                                        <a href="">My Profile</a>
-                                    </li>
+{{--                                    <li>--}}
+{{--                                        <a href="">My Profile</a>--}}
+{{--                                    </li>--}}
                                     <li>
                                         <a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -40,9 +40,9 @@
                             </div>
                         </li>
                     </ul>
-                </div>            
+                </div>
             </div>
-            
+
 
         </div>
     </div>
