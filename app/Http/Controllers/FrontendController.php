@@ -3,7 +3,8 @@
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use Brian2694\Toastr\Facades\Toastr;
-use sweetalert;
+use Session;
+use Redirect;
 
 
 class FrontendController extends Controller
@@ -20,7 +21,10 @@ class FrontendController extends Controller
 
     public function store(Request $request)
     {
-
+        $validated = $request->validate([
+            'email' => 'required',
+            'number' => 'required',
+        ]);
 
         $contact = new Contact();
         $contact->service_area = $request->service_area;
@@ -37,8 +41,8 @@ class FrontendController extends Controller
         $contact->network_id = $request->network_id;
 
         $contact->save();
-        Toastr::success('Thank you for your message');
 
-        return redirect()->back();
+
+        return redirect()->back()->with('message', 'Thank you for your message!,We Will Contact You Soon');
     }
 }

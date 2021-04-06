@@ -39,6 +39,9 @@
             </div>
             <div class="form-area">
                 <div class="section-margin">
+                    @if(Session::has('message'))
+                        <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
+                    @endif
                     <form action="{{route('storeContact')}}" class="form" method="post" id="contactInfo" enctype="multipart/form-data">
                         @csrf
                         <div class="progress-area">
@@ -49,6 +52,15 @@
                             <div class="choose-block" id="choose">
                                 <div class="from-header">
                                     <h3>Choose your service area</h3>
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul>
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                 </div>
                                 <div class="row" id="service">
                                     <div class="col-md-6 col-12">
