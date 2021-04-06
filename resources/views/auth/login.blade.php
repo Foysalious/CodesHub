@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>S & S Cuisineurs</title>
+	<title>Codeshub</title>
 
 	<!-- Favicon -->
 	<link type="image/gif" rel="shortcut icon" href="{{ asset('frontend/images/fav.png') }}">
@@ -17,19 +17,19 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
 
 	<!-- font awesome file 4.7.0 css -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/font-awesome.min.css') }}"> 
+	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/font-awesome.min.css') }}">
 
 	<!--- Font Awesome CSS 5 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
 	<!-- main bootstrap file -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/bootstrap.min.css') }}"> 
+	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/bootstrap.min.css') }}">
 
 	<!-- the main css file -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/style.css') }}"> 
+	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/style.css') }}">
 
 	<!-- responsive css file -->
-	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/responsive.css') }}"> 
+	<link rel="stylesheet" type="text/css" href="{{ asset('backend/css/responsive.css') }}">
 
 </head>
 
@@ -37,7 +37,7 @@
 <section class="auth" style="background-image: url({{ asset('backend/images/login_banner.jpg') }})">
     <div class="container">
         <div class="row auth-row">
-            
+
             <div class="auth-box">
                 <div class="auth-form">
 
@@ -95,13 +95,13 @@
                         <div class="form-group">
                             <button type="submit" class="submit-btn">Login</button>
                         </div>
-                        
+
                     </form>
                     <!-- form end -->
 
                     <!-- card start -->
                     <div class="auth-card">
-                       <a href="{{ route('password.request') }}" style="color: #000000">Lost Your Password?</a> 
+                       <a href="{{ route('password.request') }}" style="color: #000000">Lost Your Password?</a>
                     </div>
                     <!-- card end -->
 
@@ -131,7 +131,7 @@
 
 	<!-- data table js -->
 	<script type="text/javascript" src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-	
+
 	<!-- the main js file -->
 	<script type="text/javascript" src="{{ asset('backend/js/main.js') }}" ></script>
     <scrpt>
